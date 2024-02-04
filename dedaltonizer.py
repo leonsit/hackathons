@@ -40,7 +40,7 @@ elif R == B:
 else:
   preh = 0
 
-# max left/right is 60
+# max hue deviation is 60
 hue = (60*preh + 360) % 360
 
 # saturation and hue, if desired. not necessary
@@ -55,9 +55,6 @@ if left <= right:
   newhue = ((120*c - left) % 360)
 else:
   newhue = ((120*c + right) % 360)
-
-print(hue)
-print(newhue)
 
 # now, reconvert to RGB
 if 0 < newhue <= 60:
@@ -85,10 +82,10 @@ if 300 < newhue <= 360:
   pregreen = min(R,G,B)
   preblue = min(R,G,B)+(max(R,G,B)-min(R,G,B))*(1 - newhue/60 % 1)
 
-# converts new colors to whole numbers
+# converts new colors to whole numbers, here are the outputs.
 newred = round(prered*255)
 newgreen = round(pregreen*255)
 newblue = round(preblue*255)
 
 # example for output reading
-print(newred,newgreen,newblue)
+# print(newred,newgreen,newblue)
