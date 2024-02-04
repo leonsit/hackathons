@@ -15,9 +15,9 @@ blue = 167 # user input
 # colorblindness
 c = 2 # user input
 
-# 0 = green/blue
-# 1 = blue/red
-# 2 = red/green
+# 0 = green/blue, eliminates cyan
+# 1 = blue/red, eliminates magenta
+# 2 = red/green, eliminates yellow
 
 # normalize
 R = red/255
