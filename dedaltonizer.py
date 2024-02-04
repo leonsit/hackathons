@@ -47,8 +47,6 @@ hue = (60*preh + 360) % 360
 saturation = 100*(max(R,G,B)-min(R,G,B))/max(R,G,B)
 value = 100*max(R,G,B)
 
-hue = (315)
-
 # changes hue to readable zone, akin to change of variables
 # that is, removing slices of the color wheel and compacting it down.
 left = (2/3)*(120*c-hue)
